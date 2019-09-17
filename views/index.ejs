@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trang chủ</title>
+  <!-- Để trang web hiển thị rõ hơn trên điện thoại -->
+  <meta charset="utf-8" name="viewport" content="width=device-width">
+  <!-- Thư viện CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Các file JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./socket.io/socket.io.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class="w3-container">
+    <!-- Password -->
+    <div class="w3-row">
+      <div class="w3-col" style="width: auto;">
+        <p>Password: </p>
+      </div>
+      <div class="w3-rest">
+        <input type="password" class="w3-input" id="pass" />
+      </div>
+    </div>
+    <!-- Trạng thái ESP -->
+    <h3>Trạng thái: <span id="status">online</span></h3>
+    <!-- Khung điều khiển -->
+    <div class="w3-row">
+      <div class="w3-col" style="width:auto;">
+        <input type="button" value="Gửi" class="w3-button w3-red" id="btn" />
+      </div>
+      <div class="w3-rest">
+        <input type="text" placeholder="Lệnh" class="w3-input w3-border" id="cmd" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
